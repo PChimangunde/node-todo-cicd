@@ -2,6 +2,6 @@ version: '3.9'
 
 services:
   web:
-    image: Pchimangunde/node-app:latest
+    image: pchimangunde/node-app:latest
     ports:
       - "8000:8000"
