@@ -39,6 +39,8 @@ pipeline {
             steps{
              echo "this stage deploy the image using docker compose"  
              sh "docker compose down && docker compose up -d --build"
+
+                echo "print deployment is success"
             }
         }
     }
