@@ -1,10 +1,12 @@
+@my_library
+
 pipeline {
     agent { label 'mynote-app' }
     stages {
         stage ('code'){
             steps{
                echo "this stage clone/pull code from github" 
-               git url: "https://github.com/PChimangunde/node-todo-cicd.git" , branch: "master"
+                clone ( "https://github.com/PChimangunde/node-todo-cicd.git", "master" )
             }
         }
         stage ('build and test'){
