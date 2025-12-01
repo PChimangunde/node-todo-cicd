@@ -1,4 +1,4 @@
-@my_library
+@ Library ('my_library')
 
 pipeline {
     agent { label 'mynote-app' }
