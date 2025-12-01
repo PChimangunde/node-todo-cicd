@@ -5,7 +5,8 @@ pipeline {
     stages {
         stage ('code'){
             steps{
-               echo "this stage clone/pull code from github" 
+              
+                echo "this stage clone/pull code from github" 
                 clone("https://github.com/PChimangunde/node-todo-cicd.git", "master")
             }
         }
